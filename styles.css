@@ -1,0 +1,322 @@
+*{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AASmartSans', sans-serif;
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px)
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px)
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px)
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px)
+    }
+
+    to {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+}
+
+.app, .myAnim {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@font-face {
+    font-family: 'AASmartSans';
+    src: url('./src/fonts/AASmartSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'AASmartSans';
+    src: url('./src/fonts/AASmartSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    background: rgb(0,0,255);
+    background: linear-gradient(120deg, rgba(0,0,255,1) 38%, rgba(120,10,100,1) 92%, rgba(185,16,16,1) 100%);
+    background-image: url("./src/images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -100;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
+    z-index: 100;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    margin: 2rem;
+}
+
+#logoAnglo {
+    width: 130px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#marco {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    height: 48%;
+    width: 100vw;
+    background-color: white;
+    border-end-start-radius: 25%;
+    border-end-end-radius: 25%;
+}
+
+#logoConteiner {
+    width: 80%;
+}
+
+#logoEvent {
+    margin-top: 80px;
+    width: 100%;
+}
+
+#registration {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 55%;
+    margin: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+#form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    width: 80%;
+}
+
+h3, h4 {
+    color: white;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3 {
+    margin-top: 25px;
+}
+
+#modulo1 {
+    font-weight: bold;
+    background: rgb(0,0,255);
+    background: linear-gradient(300deg, rgba(0,0,255,1) 1%, rgba(120,10,100,1) 50%, rgba(185,16,16,1) 100%);
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    width: 80%;
+}
+
+button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
+    font-weight: bold;
+    background: rgb(255, 27, 27);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 60%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: rgb(255, 255, 255);
+    border: 2px solid blue;
+    color: blue;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+#question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+}
+
+#answer-buttons {
+    width: 100vw;
+}
+
+#resultado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#rpt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+}
+
+#rpt-tittle {
+    margin-top: 100px;
+}
+
+#rpt-list {
+    width: 80%;
+}
+
+.oculto {
+    display: none;
+}
+
+#rpt-btn, #rpt-close{
+    font-weight: normal;
+    font-size: 14px;
+    width: 40%;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+    <title>Plaza Quellaveco</title>
+
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="myAnim">
+        <div id="logo" class="logo">
+            <img src="src/images/logoAngloamerica.svg" alt="logoAnglo" id="logoAnglo" class="logoAnglo">
+        </div>
+    </header>
+
+    <main id="app" class="app">
+        <section id="screen1" class="screen">
+            <div>
+                <section>
+                    <div id="marco" class="marco myAnim">
+                        <div id="logoConteiner">
+                            <img src="src/images/plaza3.png" alt="logoEvent" id="logoEvent" class="logoEvent">
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <div>
+                <section>
+                    <div id="registration" >
+                        <div id="form-container">
+                            <div id="registrationForm">
+                                <div id="form-group">
+
+                                    <h1>Edición Orgullo por Moquegua</h1>
+                                    
+                                    <h2 id="modulo1">Moquegua:<br>pasado, presente y futuro minero</h2>
+                                    <button id="start-btn">Comenzar</button>
+
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="screen2" class="screen">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="answer-buttons" class="btn-container"></div>
+                <button id="next-btn" class="next-btn">Continuar</button>
+            </div>
+        </section>
+
+        <section id="screen3" class="screen">
+            <div id="resultado-container">
+                <h1 id="msg-score"></h1>
+                <h2>Respondiste <span id="score" style="font-size: 42px;"></span> bien de 4.</h2>
+                <button id="reset-btn" class="reset-btn">Volver a empezar</button>
+                <button id="rpt-btn" class="rpt-btn">Ver solución</button>
+            </div>
+        </section>
+        
+        <section id="screen4" class="screen">
+            <div id="rpt-container">
+                <h2 id="rpt-tittle">RESPUESTAS</h2>
+                <div id="rpt-list">
+                    <h3>Moquegua es la región ... del país.</h3>
+                    <h4>Más competitiva</h4>
+
+                    <h3>Moquegua ha recibido ... por canon y regalías.</h3>
+                    <h4>Todas son correctas</h4>
+
+                    <h3>La minera formal en Moquegua genera:</h3>
+                    <h4>Todas son correctas</h4>
+
+                    <h3>Marca la opción incorrecta: Actualmente Quellaveco representa el ... aproximadamente.</h3>
+                    <h4>11 % de la producción nacional de cobre</h4>
+                </div>
+
+                <button id="rpt-close" class="rpt-close">Regresar</button>
+            </div>
+        </section>
+
+        <section id="screen5" class="screen">
+            <div id="form-container">
+                <form method="post" id="regForm">
+                    <div id="form-group">
+                        <input type="text" id="dni" class="btn" name="dni" required placeholder="DNI/CARNÉ DE EXTRANJERÍA">
+                        <input type="text" id="finalScore" name="finalScore" value="0" hidden>
+                        <button type="submit">Ver Resultado</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/showScreen.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
